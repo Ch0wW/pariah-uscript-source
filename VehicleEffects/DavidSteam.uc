@@ -1,0 +1,79 @@
+class DavidSteam extends David;
+
+defaultproperties
+{
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter370
+         MaxParticles=25
+         TextureUSubdivisions=4
+         TextureVSubdivisions=4
+         FadeOutStartTime=0.300000
+         FadeInEndTime=0.200000
+         ParticlesPerSecond=12.000000
+         InitialParticlesPerSecond=12.000000
+         Texture=Texture'EmitterTextures.MultiFrame.smoke_a'
+         ColorScale(0)=(Color=(B=240,G=255,R=255,A=255))
+         ColorScale(1)=(RelativeTime=0.200000,Color=(B=115,G=120,R=120))
+         ColorScale(2)=(RelativeTime=1.000000,Color=(B=48,G=50,R=50))
+         SizeScale(0)=(RelativeSize=1.000000)
+         SizeScale(1)=(RelativeTime=0.100000,RelativeSize=2.000000)
+         SizeScale(2)=(RelativeTime=0.400000,RelativeSize=10.000000)
+         SizeScale(3)=(RelativeTime=1.000000,RelativeSize=15.000000)
+         Acceleration=(Z=200.000000)
+         StartColorRange=(X=(Min=240.000000),Z=(Min=220.000000))
+         StartLocationOffset=(X=-5.000000)
+         StartMassRange=(Min=3.000000,Max=10.000000)
+         StartSizeRange=(X=(Min=10.000000,Max=30.000000),Y=(Min=10.000000,Max=10.000000),Z=(Min=10.000000,Max=10.000000))
+         LifetimeRange=(Min=0.500000,Max=0.700000)
+         StartVelocityRange=(X=(Min=800.000000,Max=1000.000000),Y=(Min=-50.000000,Max=50.000000),Z=(Min=-50.000000,Max=50.000000))
+         VelocityLossRange=(X=(Min=3.000000,Max=5.000000))
+         CoordinateSystem=PTCS_Relative
+         DrawStyle=PTDS_Brighten
+         UseColorScale=True
+         FadeOut=True
+         FadeIn=True
+         RespawnDeadParticles=False
+         AutoDestroy=True
+         AutoReset=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+         UseRandomSubdivision=True
+     End Object
+     Emitters(0)=SpriteEmitter'VehicleEffects.SpriteEmitter370'
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter421
+         ProjectionNormal=(Z=0.000000)
+         UseDirectionAs=PTDU_Up
+         MaxParticles=30
+         ColorScaleRepeats=2.000000
+         FadeOutStartTime=0.100000
+         FadeInEndTime=0.050000
+         ParticlesPerSecond=15.000000
+         InitialParticlesPerSecond=15.000000
+         Texture=Texture'PariahWeaponEffectsTextures.hit_effects.waterfall_1'
+         ColorScale(0)=(Color=(B=240,G=255,R=255,A=255))
+         ColorScale(1)=(RelativeTime=1.000000,Color=(B=240,G=255,R=255,A=1))
+         SizeScale(0)=(RelativeSize=0.100000)
+         SizeScale(1)=(RelativeTime=0.500000,RelativeSize=0.300000)
+         SizeScale(2)=(RelativeTime=1.000000,RelativeSize=1.000000)
+         StartLocationOffset=(X=-10.000000)
+         StartSizeRange=(X=(Min=20.000000,Max=70.000000))
+         LifetimeRange=(Min=0.200000,Max=0.500000)
+         StartVelocityRange=(X=(Min=600.000000,Max=1000.000000),Y=(Min=-100.000000,Max=100.000000),Z=(Min=-150.000000,Max=100.000000))
+         VelocityLossRange=(X=(Min=4.000000,Max=6.000000),Y=(Min=1.000000,Max=3.000000),Z=(Min=1.000000,Max=3.000000))
+         CoordinateSystem=PTCS_Relative
+         DrawStyle=PTDS_AlphaBlend
+         UseColorScale=True
+         FadeOut=True
+         FadeIn=True
+         RespawnDeadParticles=False
+         AutoDestroy=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         AutomaticInitialSpawning=False
+     End Object
+     Emitters(1)=SpriteEmitter'VehicleEffects.SpriteEmitter421'
+     Tag="DavidSteam"
+     bNoDelete=False
+     bDirectional=True
+}

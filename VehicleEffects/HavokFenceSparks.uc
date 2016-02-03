@@ -1,0 +1,72 @@
+class HavokFenceSparks extends Environmental;
+
+defaultproperties
+{
+     CameraShakeRadius=256.000000
+     CameraShakeTime=0.250000
+     Begin Object Class=EmberEmitter Name=EmberEmitter16
+         MaxParticles=50
+         InitialParticlesPerSecond=1000.000000
+         WarmupTicksPerSecond=30.000000
+         RelativeWarmupTime=0.100000
+         Texture=Texture'PariahVehicleEffectsTextures.Vehicle_Explosion.explosion_spark'
+         ColorScale(0)=(Color=(B=200,G=249,R=253))
+         ColorScale(1)=(RelativeTime=1.000000,Color=(B=135,G=170,R=252))
+         SizeScale(0)=(RelativeSize=1.500000)
+         SizeScale(1)=(RelativeTime=1.000000,RelativeSize=0.800000)
+         Acceleration=(Z=-980.000000)
+         StartLocationRange=(X=(Min=-20.000000,Max=20.000000),Y=(Min=-20.000000,Max=20.000000),Z=(Min=-20.000000,Max=20.000000))
+         StartSizeRange=(Y=(Min=8.000000,Max=12.000000))
+         LifetimeRange=(Min=0.750000)
+         StartVelocityRange=(X=(Min=-100.000000,Max=-500.000000),Y=(Min=0.000000,Max=0.000000),Z=(Min=0.000000,Max=0.000000))
+         StartVelocityRadialRange=(Min=400.000000,Max=800.000000)
+         VelocityLossRange=(X=(Min=0.800000,Max=1.000000),Y=(Min=0.800000,Max=1.000000),Z=(Min=0.800000,Max=1.000000))
+         CoordinateSystem=PTCS_Relative
+         UseRotationFrom=PTRS_Actor
+         GetVelocityDirectionFrom=PTVD_AddRadial
+         RespawnDeadParticles=False
+         AutomaticInitialSpawning=False
+     End Object
+     Emitters(0)=EmberEmitter'VehicleEffects.EmberEmitter16'
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter76
+         MaxParticles=5
+         TextureUSubdivisions=2
+         TextureVSubdivisions=2
+         SubdivisionEnd=3
+         InitialParticlesPerSecond=10.000000
+         WarmupTicksPerSecond=30.000000
+         RelativeWarmupTime=0.100000
+         Texture=Texture'PariahWeaponEffectsTextures.hit_effects.wter_mist1'
+         ColorScale(0)=(Color=(B=58,G=81,R=112,A=255))
+         ColorScale(1)=(RelativeTime=0.250000,Color=(B=116,G=134,R=152,A=255))
+         ColorScale(2)=(RelativeTime=1.000000,Color=(B=58,G=81,R=112))
+         SizeScale(0)=(RelativeTime=0.200000,RelativeSize=2.000000)
+         SizeScale(1)=(RelativeTime=1.000000,RelativeSize=6.000000)
+         SubdivisionScale(0)=0.200000
+         SubdivisionScale(1)=0.050000
+         SubdivisionScale(2)=0.010000
+         Acceleration=(Z=50.000000)
+         SpinsPerSecondRange=(X=(Min=-0.100000,Max=0.100000))
+         StartSizeRange=(X=(Min=70.000000))
+         LifetimeRange=(Min=1.800000,Max=2.000000)
+         StartVelocityRange=(X=(Max=-800.000000))
+         VelocityLossRange=(X=(Min=0.700000,Max=1.000000),Y=(Min=0.700000,Max=1.000000),Z=(Min=0.700000,Max=1.000000))
+         CoordinateSystem=PTCS_Relative
+         UseRotationFrom=PTRS_Actor
+         DrawStyle=PTDS_AlphaBlend
+         UseColorScale=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+         UseRandomSubdivision=True
+     End Object
+     Emitters(1)=SpriteEmitter'VehicleEffects.SpriteEmitter76'
+     AutoDestroy=True
+     Tag="HavokFenceSparks"
+     bNoDelete=False
+     bUnlit=False
+     bDirectional=True
+}

@@ -1,0 +1,67 @@
+<!-- #include file="header.inc" -->
+<form method="post" action="<%PostAction%>">
+<input type="hidden" name="GameType" value="<%GameType%>">
+<input type="hidden" name="Session" value="<%Session%>">
+<table width="67%" height="0%" border="0" cellpadding="3" cellspacing="1">
+ <tr>
+   <td height="8%" colspan="3" align="center" valign="middle" class="ntbg">Game&nbsp;MapList&nbsp;Management</td>
+ </tr>
+ <tr>
+  <td height="31" colspan="3" align="left" nowrap>
+   <table width="100%" cellpadding="3" cellspacing="1" class="border">
+   <tr>
+   <td width="50%" align="left"><select class="mini" name="MapListNum">
+	<%MapListOptions%></select> </td>
+    <td align="right">
+     <input name="ListName" type="text" class="textbox" value="<%MapListName%>" size="20" maxlength="40">
+    </td>
+   </tr>
+   <tr>
+   <td align="left" nowrap>
+      <input name="View" type="submit" class="button" id="View" value="Load">
+      <input name="Save" type="submit" class="button" id="Save" value="Save">
+      <input name="Use" type="submit" class="button" id="Use" value="Use">
+   </td>
+   <td width="1%" align="right" nowrap>
+      <input name="New" type="submit" class="button" id="New" value="New">
+      <input name="Delete" type="submit" class="button" id="Delete" value="Delete">
+    </td>
+   </tr>
+   </table><br></td>
+   </tr>
+  <tr align="center" nowrap>
+   <td colspan="3" valign="middle" class="shbg">Make&nbsp;maplist&nbsp;changes&nbsp;here</td>
+   </tr>
+   <tr nowrap>
+     <td align="left" valign="middle">Maps&nbsp;Not&nbsp;In&nbsp;Cycle</td>
+     <td width="1%" align="center" valign="middle">&nbsp;</td>
+     <td align="right" valign="middle">Maps&nbsp;In&nbsp;Cycle</td>
+   </tr>
+   <tr>
+     <td align="left" valign="middle">
+	  <select name="ExcludeMapsSelect" size="9" multiple>
+	  <%ExcludeMapsOptions%></select>
+	  </td>
+     <td align="center" valign="middle"><br>
+	  <input name="MoveMap" type="submit" class="button" id="MoveMap" value=" &gt; "><br>
+      <input name="MoveMap" type="submit" class="button" id="MoveMap" value=" &lt; "><br><br>
+      <input name="MoveMap" type="submit" class="button" id="MoveMap" value="&gt;&gt;"><br>
+	  <input name="MoveMap" type="submit" class="button" id="MoveMap" value="&lt;&lt;">
+      </td>
+    <td align="right" valign="middle">
+	 <select name="IncludeMapsSelect" size="9" multiple>
+	    <%IncludeMapsOptions%>
+	  </select></td>
+    </tr>
+    <tr>
+    <td height="10%" align="left" nowrap>&nbsp;</td>
+    <td align="center" nowrap>&nbsp;</td>
+    <td align="right" nowrap>
+	  <input class="textbox" type="text" name="MoveMapCount" size="1" maxlength="1" value="1">
+      <input class="button" type="submit" name="MoveMap" value="Up">&nbsp;
+      <input class="button" type="submit" name="MoveMap" value="Down">
+	</td>
+   </tr>
+  </table>
+</form>
+<!-- #include file="footer.inc" -->

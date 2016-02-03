@@ -1,0 +1,33 @@
+Class DavidBulletSparks extends xEmitter;
+
+defaultproperties
+{
+     mStartParticles=10
+     mMaxParticles=10
+     mRegenOnTime(0)=0.100000
+     mRegenOnTime(1)=0.050000
+     mRegenOffTime(0)=1.000000
+     mRegenOffTime(1)=1.000000
+     mLifeRange(0)=0.500000
+     mLifeRange(1)=0.400000
+     mRegenRange(0)=1000.000000
+     mRegenRange(1)=1000.000000
+     mSpeedRange(0)=2300.000000
+     mSpeedRange(1)=500.000000
+     mMassRange(0)=3.000000
+     mMassRange(1)=1.500000
+     mAirResistance=7.000000
+     mSizeRange(0)=2.500000
+     mSizeRange(1)=2.000000
+     mAttenKa=0.100000
+     mDirDev=(X=0.200000,Y=0.200000,Z=0.500000)
+     mSpawnVecB=(X=10.000000,Z=0.040000)
+     mColorRange(0)=(B=186,G=239,R=239)
+     mColorRange(1)=(B=186,G=203,R=239)
+     mParticleType=PT_Line
+     mRegen=False
+     mRegenPause=True
+     Tag="xEmitter"
+     Skins(0)=Texture'PariahVehicleWeaponTextures.Puncher.MetalSpark'
+     Style=STY_Translucent
+}

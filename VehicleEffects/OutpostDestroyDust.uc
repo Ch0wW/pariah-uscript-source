@@ -1,0 +1,100 @@
+class OutpostDestroyDust extends David;
+
+defaultproperties
+{
+     CameraShakeRadius=6000.000000
+     CameraShakeTime=7.000000
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter381
+         MaxParticles=15
+         TextureUSubdivisions=2
+         TextureVSubdivisions=2
+         SubdivisionEnd=4
+         FadeOutStartTime=0.950000
+         FadeInEndTime=0.500000
+         InitialParticlesPerSecond=5000.000000
+         WarmupTicksPerSecond=60.000000
+         RelativeWarmupTime=0.500000
+         Texture=Texture'PariahWeaponEffectsTextures.hit_effects.wter_mist1'
+         ColorScale(0)=(Color=(B=100,G=113,R=115,A=255))
+         ColorScale(1)=(RelativeTime=0.900000,Color=(B=100,G=113,R=115,A=128))
+         ColorScale(2)=(RelativeTime=0.950000,Color=(B=51,G=51,R=51))
+         SizeScale(0)=(RelativeSize=4.000000)
+         SizeScale(1)=(RelativeTime=0.300000,RelativeSize=7.000000)
+         SizeScale(2)=(RelativeTime=0.900000,RelativeSize=18.000000)
+         Acceleration=(Z=-250.000000)
+         ColorMultiplierRange=(X=(Min=0.980000,Max=1.100000),Y=(Min=0.980000,Max=1.100000),Z=(Min=0.980000,Max=1.100000))
+         StartColorRange=(X=(Min=0.000000,Max=0.000000),Y=(Min=0.000000,Max=0.000000),Z=(Min=0.000000,Max=0.000000))
+         StartLocationRange=(X=(Min=-700.000000,Max=700.000000),Y=(Min=-700.000000,Max=700.000000),Z=(Max=150.000000))
+         SphereRadiusRange=(Min=500.000000,Max=700.000000)
+         StartLocationPolarRange=(X=(Min=-200.000000,Max=200.000000),Y=(Min=-200.000000,Max=200.000000),Z=(Max=10.000000))
+         StartMassRange=(Min=25.000000,Max=50.000000)
+         RevolutionsPerSecondRange=(X=(Min=-0.050000,Max=0.050000),Y=(Min=-0.050000,Max=0.050000),Z=(Min=-0.050000,Max=0.050000))
+         LifetimeRange=(Min=10.000000,Max=12.000000)
+         StartVelocityRange=(X=(Min=-100.000000,Max=100.000000),Y=(Min=-100.000000,Max=100.000000),Z=(Min=-700.000000,Max=-500.000000))
+         VelocityLossRange=(X=(Max=0.200000),Y=(Max=0.200000),Z=(Min=0.500000,Max=0.700000))
+         DrawStyle=PTDS_AlphaBlend
+         UseColorScale=True
+         FadeOut=True
+         FadeIn=True
+         RespawnDeadParticles=False
+         AutoDestroy=True
+         UseRevolution=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+         BlendBetweenSubdivisions=True
+         UseRandomSubdivision=True
+     End Object
+     Emitters(0)=SpriteEmitter'VehicleEffects.SpriteEmitter381'
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter382
+         MaxParticles=40
+         TextureUSubdivisions=2
+         TextureVSubdivisions=2
+         SubdivisionEnd=4
+         FadeOutStartTime=0.950000
+         FadeInEndTime=0.500000
+         InitialParticlesPerSecond=5000.000000
+         WarmupTicksPerSecond=60.000000
+         RelativeWarmupTime=0.100000
+         Texture=Texture'PariahWeaponEffectsTextures.hit_effects.wter_mist1'
+         ColorScale(0)=(Color=(B=100,G=113,R=115,A=255))
+         ColorScale(1)=(RelativeTime=0.900000,Color=(B=100,G=113,R=115,A=128))
+         ColorScale(2)=(RelativeTime=0.950000,Color=(B=51,G=51,R=51))
+         SizeScale(0)=(RelativeSize=4.000000)
+         SizeScale(1)=(RelativeTime=0.500000,RelativeSize=7.000000)
+         SizeScale(2)=(RelativeTime=0.900000,RelativeSize=12.000000)
+         Acceleration=(Z=100.000000)
+         ColorMultiplierRange=(X=(Min=0.980000,Max=1.100000),Y=(Min=0.980000,Max=1.100000),Z=(Min=0.980000,Max=1.100000))
+         StartColorRange=(X=(Min=0.000000,Max=0.000000),Y=(Min=0.000000,Max=0.000000),Z=(Min=0.000000,Max=0.000000))
+         StartLocationOffset=(Z=-1900.000000)
+         StartLocationRange=(X=(Min=-700.000000,Max=700.000000),Y=(Min=-700.000000,Max=700.000000),Z=(Max=150.000000))
+         SphereRadiusRange=(Min=500.000000,Max=700.000000)
+         StartLocationPolarRange=(X=(Min=-200.000000,Max=200.000000),Y=(Min=-200.000000,Max=200.000000),Z=(Max=10.000000))
+         StartMassRange=(Max=5.000000)
+         RevolutionsPerSecondRange=(X=(Min=-0.050000,Max=0.050000),Y=(Min=-0.050000,Max=0.050000),Z=(Min=-0.050000,Max=0.050000))
+         LifetimeRange=(Min=5.000000,Max=7.000000)
+         InitialDelayRange=(Min=2.500000,Max=3.000000)
+         StartVelocityRange=(X=(Min=-1000.000000,Max=1000.000000),Y=(Min=-1000.000000,Max=1000.000000),Z=(Max=10.000000))
+         VelocityLossRange=(X=(Min=0.700000,Max=1.000000),Y=(Min=0.700000,Max=1.000000),Z=(Min=0.500000,Max=0.700000))
+         DrawStyle=PTDS_AlphaBlend
+         UseColorScale=True
+         FadeOut=True
+         FadeIn=True
+         RespawnDeadParticles=False
+         AutoDestroy=True
+         UseRevolution=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+         BlendBetweenSubdivisions=True
+         UseRandomSubdivision=True
+     End Object
+     Emitters(1)=SpriteEmitter'VehicleEffects.SpriteEmitter382'
+     AutoDestroy=True
+     DrawScale=5.000000
+     Tag="OutpostFallingDust"
+     bNoDelete=False
+     bDirectional=True
+}

@@ -1,0 +1,55 @@
+class SmallGeneratorElectricity extends Stockton;
+
+defaultproperties
+{
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter92
+         ProjectionNormal=(Y=1.000000,Z=0.000000)
+         MaxParticles=20
+         TextureUSubdivisions=2
+         TextureVSubdivisions=2
+         SubdivisionEnd=3
+         ColorScaleRepeats=2.000000
+         FadeOutStartTime=0.500000
+         FadeInEndTime=0.100000
+         SizeScaleRepeats=5.000000
+         ParticlesPerSecond=5.000000
+         Texture=Texture'EmitterTextures2.Lightning.litnin'
+         ColorScale(0)=(Color=(B=200,G=200,R=200))
+         ColorScale(1)=(RelativeTime=1.000000,Color=(B=50,G=50,R=50))
+         SizeScale(0)=(RelativeSize=1.500000)
+         SizeScale(1)=(RelativeTime=1.000000,RelativeSize=0.500000)
+         SubdivisionScale(0)=0.500000
+         SubdivisionScale(1)=0.500000
+         SubdivisionScale(2)=0.500000
+         SubdivisionScale(3)=0.500000
+         ColorMultiplierRange=(Y=(Min=0.500000,Max=0.500000))
+         StartLocationOffset=(X=-5.000000,Y=-380.000000,Z=-50.000000)
+         StartLocationRange=(Y=(Max=500.000000))
+         StartLocationPolarRange=(Y=(Min=57344.000000,Max=8192.000000),Z=(Min=175.000000,Max=200.000000))
+         RotationOffset=(Pitch=17500)
+         StartSpinRange=(X=(Min=-9500.000000,Max=-8500.000000))
+         RotationDampingFactorRange=(Z=(Min=-10.000000,Max=10.000000))
+         RevolutionsPerSecondRange=(Z=(Min=-1.000000,Max=1.000000))
+         StartSizeRange=(X=(Min=20.000000))
+         LifetimeRange=(Min=0.500000,Max=1.000000)
+         StartVelocityRadialRange=(Min=5.000000,Max=10.000000)
+         CoordinateSystem=PTCS_Relative
+         StartLocationShape=PTLS_All
+         UseRotationFrom=PTRS_Actor
+         GetVelocityDirectionFrom=PTVD_AddRadial
+         UseColorScale=True
+         FadeOut=True
+         FadeIn=True
+         SpinParticles=True
+         UseRevolution=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         BlendBetweenSubdivisions=True
+         UseSubdivisionScale=True
+     End Object
+     Emitters(0)=SpriteEmitter'VehicleEffects.SpriteEmitter92'
+     Tag="SmallGeneratorElectricity"
+     bNoDelete=False
+     bDirectional=True
+}

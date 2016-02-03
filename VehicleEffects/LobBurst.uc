@@ -1,0 +1,102 @@
+Class LobBurst extends Emitter;
+
+defaultproperties
+{
+     Begin Object Class=MeshEmitter Name=MeshEmitter77
+         StaticMesh=StaticMesh'JS_ForestPrefabs.burstdebris'
+         MaxParticles=150
+         InitialParticlesPerSecond=2000.000000
+         SizeScale(0)=(RelativeSize=1.000000)
+         SizeScale(1)=(RelativeTime=0.800000,RelativeSize=1.000000)
+         SizeScale(2)=(RelativeTime=1.000000)
+         Acceleration=(Z=-1200.000000)
+         DampingFactorRange=(X=(Min=0.250000,Max=3.000000),Y=(Min=0.240000,Max=0.300000),Z=(Min=0.700000,Max=0.700000))
+         AutoResetTimeRange=(Min=1.000000,Max=1.000000)
+         SphereRadiusRange=(Min=-50.000000,Max=50.000000)
+         SpinsPerSecondRange=(X=(Max=2.000000),Y=(Max=2.000000),Z=(Max=2.000000))
+         StartSpinRange=(X=(Min=-1.000000,Max=1.000000),Y=(Min=-1.000000,Max=1.000000))
+         RotationDampingFactorRange=(X=(Min=10.000000,Max=10.000000),Y=(Min=10.000000,Max=10.000000),Z=(Min=10.000000,Max=10.000000))
+         StartSizeRange=(X=(Min=0.300000),Y=(Min=0.300000))
+         LifetimeRange=(Min=2.000000,Max=3.000000)
+         StartVelocityRange=(X=(Max=50.000000))
+         StartVelocityRadialRange=(Min=1500.000000,Max=3000.000000)
+         MaxAbsVelocity=(X=8000.000000,Y=8000.000000,Z=8000.000000)
+         VelocityLossRange=(X=(Max=0.500000),Y=(Max=0.500000),Z=(Min=1.000000,Max=1.000000))
+         StartLocationShape=PTLS_Sphere
+         DrawStyle=PTDS_Regular
+         GetVelocityDirectionFrom=PTVD_AddRadial
+         UseCollision=True
+         RespawnDeadParticles=False
+         AutoDestroy=True
+         SpinParticles=True
+         DampRotation=True
+         UseRevolution=True
+         UseSizeScale=True
+         AutomaticInitialSpawning=False
+     End Object
+     Emitters(0)=MeshEmitter'VehicleEffects.MeshEmitter77'
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter465
+         MaxParticles=9
+         TextureUSubdivisions=4
+         TextureVSubdivisions=4
+         FadeOutStartTime=0.800000
+         FadeInEndTime=0.150000
+         InitialParticlesPerSecond=300.000000
+         SecondsBeforeInactive=0.000000
+         Texture=Texture'PariahWeaponEffectsTextures.James.explo4x4'
+         ColorScale(0)=(Color=(B=45,G=109,R=140))
+         ColorScale(1)=(RelativeTime=1.000000,Color=(G=64,R=128))
+         SizeScale(0)=(RelativeSize=3.000000)
+         SizeScale(1)=(RelativeTime=1.000000,RelativeSize=6.000000)
+         Acceleration=(Z=150.000000)
+         StartLocationRange=(X=(Min=-5.000000,Max=5.000000),Y=(Min=-5.000000,Max=5.000000),Z=(Min=-5.000000,Max=5.000000))
+         SphereRadiusRange=(Min=10.000000,Max=10.000000)
+         StartLocationPolarRange=(X=(Min=-60.000000,Max=60.000000),Y=(Min=-60.000000,Max=60.000000),Z=(Max=60.000000))
+         SpinsPerSecondRange=(X=(Min=-0.100000,Max=0.100000),Y=(Min=-0.100000,Max=0.100000),Z=(Min=-0.100000,Max=0.100000))
+         StartSpinRange=(X=(Min=-1.000000,Max=1.000000),Y=(Min=-1.000000,Max=1.000000),Z=(Min=-1.000000,Max=1.000000))
+         StartSizeRange=(X=(Min=17.000000,Max=40.000000),Y=(Min=17.000000,Max=40.000000),Z=(Min=17.000000,Max=25.000000))
+         LifetimeRange=(Min=2.000000,Max=1.500000)
+         StartVelocityRange=(X=(Min=-1200.000000,Max=1200.000000),Y=(Min=-1200.000000,Max=1200.000000),Z=(Min=-1200.000000,Max=1200.000000))
+         StartVelocityRadialRange=(Min=-150.000000,Max=150.000000)
+         VelocityLossRange=(X=(Min=7.000000,Max=7.000000),Y=(Min=7.000000,Max=7.000000),Z=(Min=7.000000,Max=7.000000))
+         EffectAxis=PTEA_PositiveZ
+         DrawStyle=PTDS_Brighten
+         GetVelocityDirectionFrom=PTVD_AddRadial
+         FadeOut=True
+         FadeIn=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         DampRotation=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+         BlendBetweenSubdivisions=True
+     End Object
+     Emitters(1)=SpriteEmitter'VehicleEffects.SpriteEmitter465'
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter17
+         MaxParticles=1
+         InitialParticlesPerSecond=2000.000000
+         Texture=Texture'PariahWeaponEffectsTextures.James.Flash'
+         ColorScale(0)=(Color=(B=200,G=200,R=255))
+         ColorScale(1)=(RelativeTime=0.700000,Color=(B=190))
+         ColorScale(2)=(RelativeTime=1.000000)
+         SizeScale(0)=(RelativeSize=1.500000)
+         SizeScale(1)=(RelativeTime=1.000000,RelativeSize=6.000000)
+         StartLocationRange=(Z=(Min=25.000000,Max=25.000000))
+         LifetimeRange=(Min=0.180000,Max=0.180000)
+         StartVelocityRange=(Z=(Min=2500.000000,Max=2500.000000))
+         UseColorScale=True
+         RespawnDeadParticles=False
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+     End Object
+     Emitters(2)=SpriteEmitter'VehicleEffects.SpriteEmitter17'
+     LifeSpan=5.000000
+     DrawScale=8.000000
+     Tag="Emitter"
+     Physics=PHYS_Trailer
+     bNoDelete=False
+}

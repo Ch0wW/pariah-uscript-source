@@ -1,0 +1,37 @@
+Class DavidBulletDirtHit extends xEmitter;
+
+defaultproperties
+{
+     mStartParticles=20
+     mMaxParticles=20
+     mNumTileColumns=2
+     mNumTileRows=2
+     mRegenOnTime(0)=0.100000
+     mRegenOnTime(1)=0.050000
+     mRegenOffTime(0)=0.500000
+     mRegenOffTime(1)=0.500000
+     mLifeRange(0)=0.800000
+     mLifeRange(1)=0.500000
+     mRegenRange(0)=1000.000000
+     mRegenRange(1)=1000.000000
+     mSpeedRange(0)=800.000000
+     mSpeedRange(1)=200.000000
+     mMassRange(0)=5.000000
+     mMassRange(1)=4.000000
+     mAirResistance=5.000000
+     mSpinRange(0)=200.000000
+     mSpinRange(1)=-200.000000
+     mSizeRange(0)=0.500000
+     mSizeRange(1)=0.300000
+     mGrowthRate=80.000000
+     mAttenKa=0.300000
+     mAttraction=1.000000
+     mColorRange(0)=(B=88,G=124,R=120,A=150)
+     mColorRange(1)=(B=80,G=95,R=122,A=150)
+     mRegen=False
+     mRandOrient=True
+     mRandTextures=True
+     Tag="xEmitter"
+     Skins(0)=Texture'PariahVehicleWeaponTextures.Puncher.DirtDust'
+     Style=STY_Alpha
+}

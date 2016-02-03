@@ -1,0 +1,126 @@
+class MenuProfileEditNamePC extends MenuTemplateTitledBA;
+
+var() MenuEditBox       NameEdit;
+var() localized string  InUseText;
+var() localized string  MinLenText;
+var() localized string  IsReserved;
+var() int               MinLength;
+var() localized string  DefaultName;
+var ProfileData         mProfileData;
+
+
+simulated function Init( String Args )
+{
+    local string n;
+    
+    Super.Init( Args );
+
+    mProfileData = GetProfileData();
+    assert(mProfileData != None);
+
+    if(mProfileData.ValidName())
+    {
+        n = mProfileData.Name();
+        NameEdit.Blurred.Text = n;
+        NameEdit.Focused.Text = n;          
+    }
+    else
+    {
+        // correct wrt existing names
+        n = CheckName(DefaultName, mProfileData.ContinueWithoutSaving());
+        NameEdit.Blurred.Text = n;
+        NameEdit.Focused.Text = n;
+    }
+}
+
+simulated function OnAButton()
+{
+    local string n;
+    
+    n = NameEdit.Blurred.Text;
+
+    if( !NameIsValid(n) )
+    {
+        HandleInvalidName(n);
+        return;
+    }
+
+    mProfileData.Name(n);
+    
+    if( mProfileData.DefineDifficulty() )
+    {
+        CallMenuClass("XInterfaceCommon.MenuProfileEditDifficulty");
+    }
+    else
+    {
+        CallMenuClass("XInterfaceCommon.MenuProfileSaving");    
+    }    
+}
+
+simulated function bool NameInUse( string Name )
+{
+    return( Name != CheckName(Name, mProfileData.ContinueWithoutSaving()) );
+}
+
+simulated function bool NameIsValid( string Name )
+{
+    return
+    (
+        Len( Name ) >= default.MinLength &&
+        !NameInUse( Name ) &&
+        !class'XInterface.MenuBase'.static.NameIsReserved( Name )
+    );
+}
+
+simulated function HandleInvalidName( string Name )
+{
+    local string warningMessage;
+
+    if( Len( Name ) < default.MinLength )
+    {
+        warningMessage = default.MinLenText;
+        CallMenuClass("XInterfaceCommon.MenuWarning", MakeQuotedString(warningMessage));
+    }
+    else if( NameInUse( Name ) )
+    {
+        warningMessage = default.InUseText;
+        UpdateTextField(warningMessage, "%s", Name);
+        CallMenuClass("XInterfaceCommon.MenuWarning", MakeQuotedString(warningMessage));
+    }
+    else if( class'XInterface.MenuBase'.static.NameIsReserved( Name ) )
+    {
+        warningMessage = default.IsReserved;
+        UpdateTextField(warningMessage, "%s", Name);
+        CallMenuClass("XInterfaceCommon.MenuWarning", MakeQuotedString(warningMessage));
+    }
+}
+
+defaultproperties
+{
+     NameEdit=(bNoSpaces=1,MaxLength=15,MinLength=1,Blurred=(PosX=0.145000,PosY=0.250000),OnSelect="OnAButton",Style="NormalEditBox")
+     InUseText="There is already a profile or saved game named %s."
+     MinLenText="A profile name must be at least one letter or number in length."
+     IsReserved="%s is a reserved name."
+     MinLength=1
+     DefaultName="Mason"
+     ALabel=(Text="Ok")
+     APlatform=MWP_All
+     BLabel=(Text="Cancel")
+     MenuTitle=(Text="Profile Name")
+     ReservedNames(1)="Default"
+     ReservedNames(2)="New"
+     ReservedNames(3)="Player"
+     ReservedNames(4)="Pariah"
+     ReservedNames(5)="Build"
+     ReservedNames(6)="Default"
+     ReservedNames(7)="DefPariahEd"
+     ReservedNames(8)="DefUser"
+     ReservedNames(9)="Manifest"
+     ReservedNames(10)="MiniEdLaunch"
+     ReservedNames(11)="MiniEdUser"
+     ReservedNames(12)="PariahEd"
+     ReservedNames(13)="PariahEdTips"
+     ReservedNames(14)="Running"
+     ReservedNames(15)="TEMP"
+     ReservedNames(16)="User"
+}

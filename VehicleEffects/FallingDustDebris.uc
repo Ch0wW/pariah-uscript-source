@@ -1,0 +1,97 @@
+class FallingDustDebris extends Environmental;
+
+defaultproperties
+{
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter27
+         ProjectionNormal=(Z=0.000000)
+         MaxParticles=5
+         FadeOutStartTime=0.300000
+         InitialParticlesPerSecond=15.000000
+         Texture=Texture'PariahWeaponEffectsTextures.hit_effects.waterfall_1'
+         ColorScale(0)=(Color=(B=101,G=122,R=135,A=255))
+         ColorScale(1)=(RelativeTime=1.000000,Color=(B=135,G=154,R=165,A=255))
+         SizeScale(0)=(RelativeSize=1.000000)
+         SizeScale(1)=(RelativeTime=1.000000,RelativeSize=1.500000)
+         Acceleration=(Z=-980.000000)
+         StartLocationRange=(X=(Min=-25.000000,Max=25.000000),Y=(Min=-25.000000,Max=25.000000),Z=(Min=100.000000,Max=100.000000))
+         StartSizeRange=(X=(Min=75.000000),Y=(Max=150.000000))
+         LifetimeRange=(Min=1.500000,Max=1.700000)
+         VelocityLossRange=(Z=(Min=-0.300000,Max=1.000000))
+         UseRotationFrom=PTRS_Offset
+         DrawStyle=PTDS_AlphaBlend
+         UseColorScale=True
+         FadeOut=True
+         RespawnDeadParticles=False
+         Disabled=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+         ResetOnTrigger=True
+     End Object
+     Emitters(0)=SpriteEmitter'VehicleEffects.SpriteEmitter27'
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter54
+         MaxParticles=8
+         TextureUSubdivisions=2
+         TextureVSubdivisions=2
+         FadeOutStartTime=0.100000
+         FadeInEndTime=0.250000
+         InitialParticlesPerSecond=1000.000000
+         Texture=Texture'PariahWeaponEffectsTextures.hit_effects.wter_mist1'
+         ColorScale(0)=(Color=(B=101,G=122,R=135,A=255))
+         ColorScale(1)=(RelativeTime=1.000000,Color=(B=150,G=167,R=177,A=255))
+         SizeScale(0)=(RelativeSize=0.500000)
+         SizeScale(1)=(RelativeTime=0.030000,RelativeSize=1.300000)
+         SizeScale(2)=(RelativeTime=1.000000,RelativeSize=3.000000)
+         Acceleration=(Z=-980.000000)
+         StartLocationRange=(X=(Min=-100.000000,Max=100.000000),Y=(Min=-100.000000,Max=100.000000))
+         SpinsPerSecondRange=(X=(Min=0.050000,Max=0.100000))
+         LifetimeRange=(Min=2.700000,Max=3.000000)
+         StartVelocityRange=(X=(Min=-75.000000,Max=75.000000),Y=(Min=-75.000000,Max=75.000000))
+         VelocityLossRange=(X=(Min=0.300000,Max=0.700000),Y=(Min=0.300000,Max=0.700000),Z=(Max=30.000000))
+         DrawStyle=PTDS_AlphaBlend
+         UseColorScale=True
+         FadeOut=True
+         FadeIn=True
+         RespawnDeadParticles=False
+         Disabled=True
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+         UseRandomSubdivision=True
+         ResetOnTrigger=True
+     End Object
+     Emitters(1)=SpriteEmitter'VehicleEffects.SpriteEmitter54'
+     Begin Object Class=MeshEmitter Name=MeshEmitter61
+         StaticMesh=StaticMesh'HavokObjectsPrefabs.StormSetPillar.MeshConcreteSmall'
+         InitialParticlesPerSecond=1000.000000
+         SizeScale(1)=(RelativeTime=0.050000,RelativeSize=1.000000)
+         SizeScale(2)=(RelativeTime=0.900000,RelativeSize=1.000000)
+         SizeScale(3)=(RelativeTime=1.000000)
+         Acceleration=(Z=-980.000000)
+         DampingFactorRange=(X=(Min=0.100000,Max=0.300000),Y=(Min=0.100000,Max=0.300000),Z=(Min=0.100000,Max=0.300000))
+         MaxCollisions=(Min=2.000000,Max=2.000000)
+         StartLocationRange=(X=(Min=-100.000000,Max=100.000000),Y=(Min=-100.000000,Max=100.000000),Z=(Min=-10.000000,Max=-10.000000))
+         SpinsPerSecondRange=(X=(Max=1.000000),Y=(Max=1.000000),Z=(Max=1.000000))
+         RevolutionsPerSecondRange=(X=(Min=-0.030000,Max=0.030000),Y=(Min=-0.030000,Max=0.030000),Z=(Min=-0.030000,Max=0.030000))
+         StartSizeRange=(X=(Min=0.700000,Max=2.000000))
+         LifetimeRange=(Min=3.500000,Max=3.000000)
+         VelocityLossRange=(Z=(Max=-1.000000))
+         UseCollision=True
+         UseMaxCollisions=True
+         RespawnDeadParticles=False
+         Disabled=True
+         SpinParticles=True
+         UseRevolution=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+         ResetOnTrigger=True
+     End Object
+     Emitters(2)=MeshEmitter'VehicleEffects.MeshEmitter61'
+     Tag="FallingDustDebris"
+     bUnlit=False
+}

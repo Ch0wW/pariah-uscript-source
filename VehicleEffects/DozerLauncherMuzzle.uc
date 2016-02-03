@@ -1,0 +1,111 @@
+class DozerLauncherMuzzle extends Vehicles
+	placeable;
+
+defaultproperties
+{
+     Begin Object Class=EmberEmitter Name=EmberEmitter1
+         MaxParticles=15
+         InitialParticlesPerSecond=5000.000000
+         Texture=Texture'PariahWeaponEffectsTextures.hit_effects.bullet_slug_glowing'
+         ColorScale(0)=(Color=(B=197,G=250,R=254))
+         ColorScale(1)=(RelativeTime=1.000000,Color=(B=170,G=194,R=253))
+         SizeScale(0)=(RelativeSize=4.000000)
+         SizeScale(1)=(RelativeTime=0.500000,RelativeSize=2.000000)
+         Acceleration=(Z=-250.000000)
+         DampingFactorRange=(X=(Min=0.500000),Y=(Min=0.500000),Z=(Min=0.500000))
+         MaxCollisions=(Min=3.000000,Max=3.000000)
+         StartLocationRange=(X=(Min=0.000000,Max=0.000000),Y=(Min=0.000000,Max=0.000000),Z=(Min=0.000000,Max=0.000000))
+         SphereRadiusRange=(Max=20.000000)
+         RotationDampingFactorRange=(X=(Min=1.000000,Max=10.000000),Y=(Min=1.000000,Max=10.000000),Z=(Min=1.000000,Max=10.000000))
+         RevolutionsPerSecondRange=(X=(Min=-0.100000,Max=0.100000),Y=(Min=-0.100000,Max=0.100000),Z=(Min=-0.010000,Max=0.010000))
+         StartSizeRange=(X=(Min=1.000000,Max=1.500000),Y=(Min=4.000000))
+         LifetimeRange=(Min=0.250000,Max=0.750000)
+         StartVelocityRange=(X=(Min=100.000000,Max=2500.000000),Y=(Min=-300.000000,Max=300.000000),Z=(Min=-300.000000,Max=300.000000))
+         VelocityLossRange=(X=(Min=1.000000,Max=5.000000),Y=(Min=1.000000,Max=5.000000),Z=(Min=1.000000,Max=5.000000))
+         StartLocationShape=PTLS_Sphere
+         UseRotationFrom=PTRS_Actor
+         UseCollision=True
+         UseColorScale=False
+         RespawnDeadParticles=False
+         DampRotation=True
+         UseRevolution=True
+         AutomaticInitialSpawning=False
+     End Object
+     Emitters(0)=EmberEmitter'VehicleEffects.EmberEmitter1'
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter418
+         MaxParticles=1
+         TextureUSubdivisions=2
+         TextureVSubdivisions=2
+         SubdivisionStart=2
+         SubdivisionEnd=4
+         InitialParticlesPerSecond=5000.000000
+         WarmupTicksPerSecond=60.000000
+         RelativeWarmupTime=1.000000
+         Texture=Texture'PariahVehicleEffectsTextures.Tire.TireDust'
+         ColorScale(0)=(Color=(B=215,G=226,R=234,A=200))
+         ColorScale(1)=(RelativeTime=0.500000,Color=(B=255,G=255,R=255,A=25))
+         SizeScale(0)=(RelativeSize=1.000000)
+         SizeScale(1)=(RelativeTime=0.030000,RelativeSize=2.000000)
+         SizeScale(2)=(RelativeTime=1.000000,RelativeSize=4.000000)
+         Acceleration=(Z=-25.000000)
+         SphereRadiusRange=(Max=20.000000)
+         SpinsPerSecondRange=(X=(Min=0.010000,Max=0.030000))
+         StartSpinRange=(X=(Max=16384.000000))
+         LifetimeRange=(Min=2.800000,Max=3.000000)
+         StartVelocityRange=(X=(Min=-5.000000,Max=5.000000),Y=(Min=-5.000000,Max=5.000000),Z=(Min=-5.000000,Max=5.000000))
+         StartLocationShape=PTLS_Sphere
+         UseRotationFrom=PTRS_Actor
+         DrawStyle=PTDS_AlphaBlend
+         UseColorScale=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         UseRevolution=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+         BlendBetweenSubdivisions=True
+     End Object
+     Emitters(1)=SpriteEmitter'VehicleEffects.SpriteEmitter418'
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter408
+         TextureUSubdivisions=2
+         TextureVSubdivisions=2
+         InitialParticlesPerSecond=100.000000
+         Texture=Texture'PariahVehicleEffectsTextures.Tire.TireDust'
+         ColorScale(0)=(Color=(B=200,G=200,R=200,A=255))
+         ColorScale(1)=(RelativeTime=0.150000,Color=(B=226,G=226,R=226,A=200))
+         ColorScale(2)=(RelativeTime=1.000000,Color=(B=245,G=245,R=245))
+         SizeScale(0)=(RelativeSize=0.200000)
+         SizeScale(1)=(RelativeTime=0.400000,RelativeSize=1.000000)
+         SizeScale(2)=(RelativeTime=1.000000,RelativeSize=2.500000)
+         Acceleration=(X=100.000000,Y=50.000000,Z=25.000000)
+         StartAlphaRange=(Min=150.000000)
+         SphereRadiusRange=(Max=20.000000)
+         SpinsPerSecondRange=(X=(Min=0.050000,Max=0.200000))
+         StartSpinRange=(X=(Max=16384.000000))
+         RotationDampingFactorRange=(X=(Min=10.000000,Max=50.000000),Y=(Min=10.000000,Max=50.000000),Z=(Min=10.000000,Max=50.000000))
+         RevolutionsPerSecondRange=(X=(Min=-0.100000,Max=0.100000),Y=(Min=-0.100000,Max=0.100000),Z=(Min=-0.100000,Max=0.100000))
+         LifetimeRange=(Min=0.300000,Max=1.000000)
+         StartVelocityRange=(X=(Min=750.000000,Max=2000.000000),Y=(Min=-50.000000,Max=50.000000),Z=(Min=-50.000000,Max=50.000000))
+         VelocityLossRange=(X=(Max=3.000000),Y=(Max=3.000000),Z=(Max=3.000000))
+         StartLocationShape=PTLS_Sphere
+         UseRotationFrom=PTRS_Actor
+         DrawStyle=PTDS_AlphaBlend
+         UseColorScale=True
+         RespawnDeadParticles=False
+         SpinParticles=True
+         DampRotation=True
+         UseRevolution=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+         UseRandomSubdivision=True
+     End Object
+     Emitters(2)=SpriteEmitter'VehicleEffects.SpriteEmitter408'
+     Tag="DozerLauncherMuzzle"
+     bNoDelete=False
+     bAcceptsProjectors=False
+     bUnlit=False
+     bDirectional=True
+}

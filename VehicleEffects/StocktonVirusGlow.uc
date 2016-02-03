@@ -1,0 +1,100 @@
+class StocktonVirusGlow extends Stockton;
+
+defaultproperties
+{
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter44
+         FadeOutStartTime=0.800000
+         FadeInEndTime=0.500000
+         InitialParticlesPerSecond=2.000000
+         Texture=Texture'PariahWeaponEffectsTextures.James.FlashRound'
+         ColorScale(1)=(RelativeTime=0.300000,Color=(B=255,G=207,R=159))
+         ColorScale(2)=(RelativeTime=0.900000,Color=(B=255,G=106,R=106))
+         ColorScale(3)=(RelativeTime=1.000000)
+         SizeScale(0)=(RelativeSize=1.000000)
+         SizeScale(1)=(RelativeTime=0.005000,RelativeSize=2.500000)
+         SizeScale(2)=(RelativeTime=0.010000,RelativeSize=2.000000)
+         SizeScale(3)=(RelativeTime=0.990000,RelativeSize=1.500000)
+         SizeScale(4)=(RelativeTime=0.995000,RelativeSize=2.000000)
+         SizeScale(5)=(RelativeTime=1.000000,RelativeSize=1.000000)
+         StartLocationOffset=(Z=-20.000000)
+         SphereRadiusRange=(Min=15.000000,Max=50.000000)
+         SpinCCWorCW=(X=1.000000,Y=1.000000,Z=1.000000)
+         SpinsPerSecondRange=(X=(Min=-0.050000,Max=0.050000))
+         StartSpinRange=(X=(Min=-16384.000000,Max=16384.000000))
+         StartSizeRange=(X=(Max=150.000000))
+         LifetimeRange=(Min=2.000000,Max=3.000000)
+         StartVelocityRange=(X=(Min=-10.000000,Max=10.000000),Y=(Min=-10.000000,Max=10.000000),Z=(Min=5.000000,Max=25.000000))
+         StartLocationShape=PTLS_All
+         UseRotationFrom=PTRS_Actor
+         DrawStyle=PTDS_Brighten
+         UseColorScale=True
+         AutoDestroy=True
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+         AutomaticInitialSpawning=False
+     End Object
+     Emitters(0)=SpriteEmitter'VehicleEffects.SpriteEmitter44'
+     Begin Object Class=EmberEmitter Name=EmberEmitter6
+         MaxParticles=150
+         InitialParticlesPerSecond=10000.000000
+         Texture=Texture'PariahWeaponEffectsTextures.James.FlashRound'
+         ColorScale(0)=(Color=(B=255,G=255,R=255))
+         ColorScale(1)=(RelativeTime=0.500000,Color=(B=255,G=255,R=255))
+         ColorScale(2)=(RelativeTime=0.800000,Color=(B=255,G=130,R=162))
+         ColorScale(3)=(RelativeTime=1.000000)
+         SizeScale(0)=(RelativeSize=0.100000)
+         SizeScale(1)=(RelativeTime=0.500000,RelativeSize=1.000000)
+         SizeScale(2)=(RelativeTime=1.000000,RelativeSize=0.100000)
+         Acceleration=(Z=0.000000)
+         DampingFactorRange=(X=(Min=0.500000,Max=0.500000),Y=(Min=0.500000,Max=0.500000),Z=(Min=0.500000,Max=0.500000))
+         MaxCollisions=(Min=2.000000,Max=3.000000)
+         StartLocationRange=(X=(Min=-50.000000,Max=50.000000),Y=(Min=-50.000000,Max=50.000000),Z=(Min=-50.000000,Max=50.000000))
+         SphereRadiusRange=(Min=250.000000,Max=270.000000)
+         RotationDampingFactorRange=(X=(Min=0.500000,Max=0.700000))
+         RevolutionsPerSecondRange=(X=(Min=-1.000000,Max=1.000000),Y=(Min=-1.000000,Max=1.000000),Z=(Min=-1.000000,Max=1.000000))
+         StartSizeRange=(X=(Max=5.000000),Y=(Min=30.000000,Max=70.000000),Z=(Min=5.000000,Max=10.000000))
+         LifetimeRange=(Min=3.000000,Max=2.500000)
+         VelocityLossRange=(X=(Min=0.300000,Max=0.500000),Y=(Min=0.300000,Max=0.500000),Z=(Min=0.300000,Max=0.500000))
+         CoordinateSystem=PTCS_Relative
+         StartLocationShape=PTLS_Sphere
+         UseRotationFrom=PTRS_Actor
+         UseCollision=True
+         FadeOut=False
+         AutoDestroy=True
+         UseRevolution=True
+         UseRandomSubdivision=True
+     End Object
+     Emitters(1)=EmberEmitter'VehicleEffects.EmberEmitter6'
+     Begin Object Class=SpriteEmitter Name=SpriteEmitter349
+         MaxParticles=3
+         SizeScaleRepeats=42.000000
+         InitialParticlesPerSecond=10000.000000
+         Texture=Texture'PariahVehicleEffectsTextures.Vehicle_Explosion.explosion_rays'
+         ColorScale(1)=(RelativeTime=0.500000)
+         ColorScale(2)=(RelativeTime=0.520000,Color=(B=255,G=255,R=255))
+         ColorScale(3)=(RelativeTime=0.800000,Color=(B=255,G=255,R=255))
+         ColorScale(4)=(RelativeTime=1.000000)
+         SizeScale(0)=(RelativeSize=5.000000)
+         SizeScale(1)=(RelativeTime=1.000000,RelativeSize=1.000000)
+         SpinsPerSecondRange=(X=(Min=0.780000,Max=0.780000))
+         StartSpinRange=(X=(Max=16384.000000))
+         LifetimeRange=(Min=0.500000,Max=1.500000)
+         CoordinateSystem=PTCS_Relative
+         StartLocationShape=PTLS_All
+         UseRotationFrom=PTRS_Actor
+         UseColorScale=True
+         AutoDestroy=True
+         SpinParticles=True
+         UseSizeScale=True
+         UseRegularSizeScale=False
+         UniformSize=True
+     End Object
+     Emitters(2)=SpriteEmitter'VehicleEffects.SpriteEmitter349'
+     AutoDestroy=True
+     LifeSpan=10.000000
+     Tag="StocktonVirusGlow"
+     bNoDelete=False
+     bDirectional=True
+}
